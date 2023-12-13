@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <script src="./scripts/cart-products.js"></script>
+    <link rel="stylesheet" type="text/css" href="./styles/userHome.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</head>
+
+
+
+<body class="d-flex flex-column align-items-center bg-light">
+    <header class="row bg-dark px-5 text-center align-items-center position-fixed w-100 m-0">
+        <a href="home.html" class="text-light col-md-3 d-none d-sm-block btn">Inicio</a>
+        <h3 class="text-light col-md-6 col-sm-12 m-0"><strong>INOVA TECH</strong></h3>
+        <div class="col-md-3 d-flex justify-content-end gap-2">
+            <button type="button" class="text-light d-none d-sm-block btn"><img height="25px"
+                    src="./assets/img/cart-icon.svg" style="filter: invert(1);" alt=""></button>
+            <button onclick="logout()" type="button" id="headerUsername" class="text-dark d-none d-sm-block btn"><img
+                    height="25px" src="./assets/img/logout.svg" style="filter: invert(1);" alt=""></button>
+        </div>
+    </header>
+    <main class="position-absolute d-flex flex-column bg-light mx-5 w-75 h-100">
+        <h1 class="display-5 mt-2">Carrito de Compras</h1>
+        <hr>
+        <div class="gap-2 row justify-content-around">
+            <div id="cart-list" class="col-md-5 d-flex flex-column gap-2 p-"></div>
+            <div class="col-md-5 border rounded p-3" style="background-color: white;">
+                <h3>Resumen de compra</h3>
+                <hr>
+                <div id="cardShopList"></div>
+                <hr>
+                <div class="d-flex justify-content-end">
+                    <h4 id="total-cart"></h4>
+                </div>
+                <hr>
+                <div class="d-flex flex-column">
+                    <h5>Elija un método de pago:</h5>
+                    <div id="payment-list" class="d-flex flex-column"></div>
+                </div>
+                <hr>
+                <button onclick="payCart()" class="btn btn-warning w-100">Pagar</button>
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

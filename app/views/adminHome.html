@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+    <script src="./scripts/adminHome.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body class="position-absolute w-100 h-100" style="top: 0; left: 0;">
+    <header class="row bg-dark px-5 text-center">
+        <h3 class="text-light col-md-2 d-none d-sm-block"></h3>
+        <a href="adminHome.html" class="h3 text-light col-md-8 col-sm-12"><strong>INOVA TECH</strong></a>
+        <button onclick="logout()" type="button" id="headerUsername" class="text-light col-md-2 d-none d-sm-block btn btn-dark">Cerrar Sesión</button>
+    </header>
+    <main class="container d-flex flex-wrap gap-4 justify-content-start py-3">
+        <div class="card" style="width: 18rem;">
+            <img src="https://media.istockphoto.com/id/941410386/photo/distribution-warehouse-logistics-packaged-parcels-ready-for-shipment-and-delivery.jpg?s=612x612&w=0&k=20&c=exsJ4oMqm5iQnTTnf02lQ7qS943k3RxIPpNk_Q-85r0=" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Gestión de Productos</h5>
+                <p class="card-text">Aquí puede gestionar toda la información sobre su inventario.</p>
+                <a href="product-manager.html" class="btn btn-warning w-100">Mostrar</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://us.123rf.com/450wm/phantomrider/phantomrider1507/phantomrider150701446/42191463-flat-design-concept-icons-for-payment-methods-for-online-shopping-and-e-commerce-web-shop-credit.jpg?ver=6" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Métodos de Pago</h5>
+                <p class="card-text">Integre o gestione diferentes métodos de pago en la aplicación.</p>
+                <a href="payment-manager.html" class="btn btn-info w-100">Mostrar</a>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

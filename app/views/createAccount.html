@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./scripts/utils.js"></script>
+    <script src="./scripts/createAccount.js"></script>
+    <link rel="stylesheet" type="text/css" href="./styles/createAccount.css">
+</head>
+<body class="position-absolute w-100 h-100 bg-dark justify-content-center row">
+    <div id="background-title" class="text-light d-flex align-items-center col-md-3 col-sm-12 text-center">
+        <h1 class="display-2"><strong>Inova Tech</strong></h1>
+    </div>
+    <div class="col-md-9 col-sm-12 align-items-center justify-content-around d-flex flex-column text-light text-center">
+        <h2 class="display-5"><strong>Crear Usuario</strong></h2>
+        <div id="inputs">
+            <input id="name" placeholder="Nombres" class="form-control" type="text">
+            <input id="surname" placeholder="Apellidos" class="form-control" type="text">
+            <input id="email" placeholder="Email" class="form-control" type="email">
+            <input oninput="validatePass(this)" id="pass" placeholder="Contraseña" class="form-control" type="password">
+        </div>
+        <button onclick="createAccount()" class="btn btn-primary w-25 px-5">Crear Cuenta</button>
+        <small id="isValidPass" class="text-danger d-none">La contraseña debe tener 8 carácteres y una letra mayúscula</small>
+        <label for="">Tiene una cuenta? <a href="index.html">Inicie Sesión</a></label>
+    </div>
+</body>
+</html>
